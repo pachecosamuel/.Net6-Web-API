@@ -1,6 +1,6 @@
 # .Net6-Web-API
 ### https://www.udemy.com/course/net-6-web-api-do-zero-ao-avancado/
-###Microsoft platform and will also teach the student:
+Microsoft platform and will also teach the student:
 -Changes
 -How to configure a web application
 -REST API
