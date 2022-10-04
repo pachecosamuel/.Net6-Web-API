@@ -1,0 +1,17 @@
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\bin\Debug\net6.0\MyCode.exe
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\bin\Debug\net6.0\MyCode.deps.json
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\bin\Debug\net6.0\MyCode.runtimeconfig.json
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\bin\Debug\net6.0\MyCode.dll
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\bin\Debug\net6.0\MyCode.pdb
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\obj\Debug\net6.0\MyCode.csproj.AssemblyReference.cache
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\obj\Debug\net6.0\MyCode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\obj\Debug\net6.0\MyCode.AssemblyInfoInputs.cache
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\obj\Debug\net6.0\MyCode.AssemblyInfo.cs
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\obj\Debug\net6.0\MyCode.csproj.CoreCompileInputs.cache
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\obj\Debug\net6.0\MyCode.dll
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\obj\Debug\net6.0\refint\MyCode.dll
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\obj\Debug\net6.0\MyCode.pdb
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\obj\Debug\net6.0\MyCode.genruntimeconfig.cache
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\obj\Debug\net6.0\ref\MyCode.dll
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\bin\Debug\net6.0\FluentColorConsole.dll
+C:\Users\Samuel Pacheco\Desktop\JobT2m\Web-API\MyCode\obj\Debug\net6.0\MyCode.csproj.CopyComplete

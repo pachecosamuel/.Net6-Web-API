@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kaeu3Q0M/3dtzcUantiKFqQQ678jHex1x0OOCkrU+2JeDwd+AA3e22fnPx5FW/Xc66qojDqhBG5FXjEvEa525Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Samuel Pacheco\\Desktop\\JobT2m\\Web-API\\MyCode\\MyCode.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Samuel Pacheco\\.nuget\\packages\\fluentcolorconsole\\2.0.1\\fluentcolorconsole.2.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
