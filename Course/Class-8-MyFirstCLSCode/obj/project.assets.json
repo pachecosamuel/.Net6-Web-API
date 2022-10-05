@@ -44,11 +44,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Samuel Pacheco\\Desktop\\JobT2m\\Web-API\\MyCode\\MyCode.csproj",
+      "projectUniqueName": "C:\\Users\\Samuel Pacheco\\Desktop\\jobt2m\\web-api\\course\\Class-8-MyFirstCLSCode\\MyCode.csproj",
       "projectName": "MyCode",
-      "projectPath": "C:\\Users\\Samuel Pacheco\\Desktop\\JobT2m\\Web-API\\MyCode\\MyCode.csproj",
+      "projectPath": "C:\\Users\\Samuel Pacheco\\Desktop\\jobt2m\\web-api\\course\\Class-8-MyFirstCLSCode\\MyCode.csproj",
       "packagesPath": "C:\\Users\\Samuel Pacheco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Samuel Pacheco\\Desktop\\JobT2m\\Web-API\\MyCode\\obj\\",
+      "outputPath": "C:\\Users\\Samuel Pacheco\\Desktop\\jobt2m\\web-api\\course\\Class-8-MyFirstCLSCode\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

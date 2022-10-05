@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kaeu3Q0M/3dtzcUantiKFqQQ678jHex1x0OOCkrU+2JeDwd+AA3e22fnPx5FW/Xc66qojDqhBG5FXjEvEa525Q==",
+  "dgSpecHash": "dKtHqXtoWELOL/R6g8PnVeHX6INoDpVkmQNydwcsvMNCteNKsA1B5ZXjOoTxHORAUEFSHLkx/SEi0oAdxk/Rmw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Samuel Pacheco\\Desktop\\JobT2m\\Web-API\\MyCode\\MyCode.csproj",
+  "projectFilePath": "C:\\Users\\Samuel Pacheco\\Desktop\\jobt2m\\web-api\\course\\Class-8-MyFirstCLSCode\\MyCode.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Samuel Pacheco\\.nuget\\packages\\fluentcolorconsole\\2.0.1\\fluentcolorconsole.2.0.1.nupkg.sha512"
   ],
