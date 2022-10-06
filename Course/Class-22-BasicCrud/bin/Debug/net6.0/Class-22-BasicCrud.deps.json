@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Class-22-BasicCrud/1.0.0": {
+        "runtime": {
+          "Class-22-BasicCrud.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Class-22-BasicCrud/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Samuel Pacheco\\Desktop\\jobt2m\\web-api\\course\\Class-14-FirstAPI\\Class-14-FirstAPI.csproj": {}
+    "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\Course\\Class-14-FirstAPI\\Class-14-FirstAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Samuel Pacheco\\Desktop\\jobt2m\\web-api\\course\\Class-14-FirstAPI\\Class-14-FirstAPI.csproj": {
+    "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\Course\\Class-14-FirstAPI\\Class-14-FirstAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samuel Pacheco\\Desktop\\jobt2m\\web-api\\course\\Class-14-FirstAPI\\Class-14-FirstAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\Course\\Class-14-FirstAPI\\Class-14-FirstAPI.csproj",
         "projectName": "Class-14-FirstAPI",
-        "projectPath": "C:\\Users\\Samuel Pacheco\\Desktop\\jobt2m\\web-api\\course\\Class-14-FirstAPI\\Class-14-FirstAPI.csproj",
+        "projectPath": "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\Course\\Class-14-FirstAPI\\Class-14-FirstAPI.csproj",
         "packagesPath": "C:\\Users\\Samuel Pacheco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samuel Pacheco\\Desktop\\jobt2m\\web-api\\course\\Class-14-FirstAPI\\obj\\",
+        "outputPath": "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\Course\\Class-14-FirstAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

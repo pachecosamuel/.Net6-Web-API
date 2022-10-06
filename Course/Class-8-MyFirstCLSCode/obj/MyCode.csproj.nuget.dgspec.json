@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Samuel Pacheco\\Desktop\\jobt2m\\web-api\\course\\Class-8-MyFirstCLSCode\\MyCode.csproj": {}
+    "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\Course\\Class-8-MyFirstCLSCode\\MyCode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Samuel Pacheco\\Desktop\\jobt2m\\web-api\\course\\Class-8-MyFirstCLSCode\\MyCode.csproj": {
+    "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\Course\\Class-8-MyFirstCLSCode\\MyCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samuel Pacheco\\Desktop\\jobt2m\\web-api\\course\\Class-8-MyFirstCLSCode\\MyCode.csproj",
+        "projectUniqueName": "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\Course\\Class-8-MyFirstCLSCode\\MyCode.csproj",
         "projectName": "MyCode",
-        "projectPath": "C:\\Users\\Samuel Pacheco\\Desktop\\jobt2m\\web-api\\course\\Class-8-MyFirstCLSCode\\MyCode.csproj",
+        "projectPath": "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\Course\\Class-8-MyFirstCLSCode\\MyCode.csproj",
         "packagesPath": "C:\\Users\\Samuel Pacheco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samuel Pacheco\\Desktop\\jobt2m\\web-api\\course\\Class-8-MyFirstCLSCode\\obj\\",
+        "outputPath": "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\Course\\Class-8-MyFirstCLSCode\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
