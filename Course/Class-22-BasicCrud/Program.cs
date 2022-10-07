@@ -40,9 +40,6 @@ public static class ProductRepository
 {
     public static List<Product>? ListProduct { get; set; } = new();
 
-    public static int[] MyVector { get; set; } = new int[10];
-
-
     public static void AddProduct(Product product)
     {
         ListProduct.Add(product);
