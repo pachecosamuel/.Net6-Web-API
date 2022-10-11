@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\course\\Class-22-BasicCrud\\Class-22-BasicCrud.csproj": {}
+    "C:\\Users\\pache\\Desktop\\JobT2M\\.Net6-Web-API\\Course\\Class-22-BasicCrud\\Class-22-BasicCrud.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\course\\Class-22-BasicCrud\\Class-22-BasicCrud.csproj": {
+    "C:\\Users\\pache\\Desktop\\JobT2M\\.Net6-Web-API\\Course\\Class-22-BasicCrud\\Class-22-BasicCrud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\course\\Class-22-BasicCrud\\Class-22-BasicCrud.csproj",
+        "projectUniqueName": "C:\\Users\\pache\\Desktop\\JobT2M\\.Net6-Web-API\\Course\\Class-22-BasicCrud\\Class-22-BasicCrud.csproj",
         "projectName": "Class-22-BasicCrud",
-        "projectPath": "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\course\\Class-22-BasicCrud\\Class-22-BasicCrud.csproj",
-        "packagesPath": "C:\\Users\\Samuel Pacheco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\course\\Class-22-BasicCrud\\obj\\",
+        "projectPath": "C:\\Users\\pache\\Desktop\\JobT2M\\.Net6-Web-API\\Course\\Class-22-BasicCrud\\Class-22-BasicCrud.csproj",
+        "packagesPath": "C:\\Users\\pache\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pache\\Desktop\\JobT2M\\.Net6-Web-API\\Course\\Class-22-BasicCrud\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\ArquivosDeProgramas\\MicrosoftVisualStudio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Samuel Pacheco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pache\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

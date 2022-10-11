@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SJ7OJNA6rBriw2uB31HkiqgtcQ1maym2MHG7nYpVzefKpGghGeIa5tQNOkttJoYyAfZrIQnDwEXAgbQyYZEqag==",
+  "dgSpecHash": "x5mGQLr+8EhLU9EqHS6AxKDFS7lD7bAGd+lA+8/tI+HoP3VdiMweec5NySEqB31WITJleQSZB+1y+fFyic1PlA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Samuel Pacheco\\desktop\\jobt2m\\web-api\\course\\Class-22-BasicCrud\\Class-22-BasicCrud.csproj",
+  "projectFilePath": "C:\\Users\\pache\\Desktop\\JobT2M\\.Net6-Web-API\\Course\\Class-22-BasicCrud\\Class-22-BasicCrud.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

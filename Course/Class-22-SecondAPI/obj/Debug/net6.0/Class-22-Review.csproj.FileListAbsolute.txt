@@ -1,0 +1,44 @@
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\bin\Debug\net6.0\appsettings.json
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\bin\Debug\net6.0\Class-22-Review.exe
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\bin\Debug\net6.0\Class-22-Review.deps.json
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\bin\Debug\net6.0\Class-22-Review.runtimeconfig.json
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\bin\Debug\net6.0\Class-22-Review.dll
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\bin\Debug\net6.0\Class-22-Review.pdb
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.csproj.AssemblyReference.cache
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.AssemblyInfoInputs.cache
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.AssemblyInfo.cs
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.csproj.CoreCompileInputs.cache
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\obj\Debug\net6.0\scopedcss\bundle\Class-22-Review.styles.css
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.dll
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\obj\Debug\net6.0\refint\Class-22-Review.dll
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.pdb
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.genruntimeconfig.cache
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\obj\Debug\net6.0\ref\Class-22-Review.dll
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Samuel Pacheco\Desktop\JobT2M\Web-API\Course\Class-22-Review\bin\Debug\net6.0\appsettings.Stage.json
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\bin\Debug\net6.0\appsettings.json
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\bin\Debug\net6.0\Class-22-Review.exe
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\bin\Debug\net6.0\Class-22-Review.deps.json
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\bin\Debug\net6.0\Class-22-Review.runtimeconfig.json
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\bin\Debug\net6.0\Class-22-Review.dll
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\bin\Debug\net6.0\Class-22-Review.pdb
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.csproj.AssemblyReference.cache
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.AssemblyInfoInputs.cache
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.AssemblyInfo.cs
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.csproj.CoreCompileInputs.cache
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\obj\Debug\net6.0\scopedcss\bundle\Class-22-Review.styles.css
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.dll
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\obj\Debug\net6.0\refint\Class-22-Review.dll
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.pdb
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\obj\Debug\net6.0\Class-22-Review.genruntimeconfig.cache
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\obj\Debug\net6.0\ref\Class-22-Review.dll
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\Class-22-Review\bin\Debug\net6.0\appsettings.Staging.json
