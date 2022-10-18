@@ -5,9 +5,9 @@ public class Product
 
     public string? Description { get; set; }
 
-    public Category Category { get; set; }
+    public Category? Category { get; set; }
 
-    public List<Tag> Tags { get; set; }
+    public List<Tag> Tags { get; set; } = new();
 
     public override string? ToString()
     {

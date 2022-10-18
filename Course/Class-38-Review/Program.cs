@@ -5,9 +5,19 @@ var app = builder.Build();
 builder.Services.AddSqlServer<ApplicationDbContext>(builder.Configuration["Database:SqlServer"]);
 
 
-app.MapPost("/product", (Product product) =>
+app.MapPost("/product", (ProductRequest productRequest, ApplicationDbContext context) =>
 {
-    ProductRepository.AddProduct(product);
+    var category = context.Category?.Where(x => x.CategoryId == productRequest.CategoryId).FirstOrDefault();
+
+    var product = new Product
+    {
+        ProductId = productRequest.ProductId,
+        ProductName = productRequest.ProductName,
+        Description = productRequest.Description,
+        Category = category,
+    };
+
+    context.Products.Add(product);
     return Results.Created($"/{product.ProductId}", product);
 });
 
