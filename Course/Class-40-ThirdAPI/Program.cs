@@ -17,13 +17,13 @@ app.MapPost("/product", (ProductRequest productRequest, ApplicationDbContext con
         Category = category
     };
 
-    if(productRequest.Tags != null)
+    if (productRequest.Tags != null)
     {
         product.Tags = new List<Tag>();
 
-        foreach(var item in productRequest.Tags)
+        foreach (var item in productRequest.Tags)
         {
-            product.Tags.Add( new Tag{ TagName = item } );
+            product.Tags.Add(new Tag { TagName = item });
         }
     }
 
@@ -49,18 +49,37 @@ app.MapGet("/product/{id}", ([FromRoute] int id, ApplicationDbContext context) =
 });
 
 
-app.MapPut("/product", (Product product) =>
+app.MapPut("/product/{id}", ([FromRoute] int id, ProductRequest productRequest, ApplicationDbContext context) =>
 {
-    var productSaved = ProductRepository.GetById(product.Id);
-    productSaved.ProductName = product.ProductName;
+    var product = context.Products
+    .Include(t => t.Tags)
+    .Where(p => p.Id == id).First();
+
+    var category = context.Category.Where(c => c.Id == productRequest.CategoryId).First();
+
+    product.ProductName = productRequest.ProductName;
+    product.ProductDescription = productRequest.ProductDescription;
+    product.Category = category;
+    product.Tags = new List<Tag>();
+
+    if (productRequest.Tags != null)
+    {
+        product.Tags = new List<Tag>();
+        foreach (var item in productRequest.Tags)
+        {
+            product.Tags.Add(new Tag { TagName = item });
+        }
+    }
+
+    context.SaveChanges();
     return Results.Ok();
 });
 
-app.MapDelete("/product/{id}", (int id) =>
+app.MapDelete("/product/{id}", ([FromRoute]int id,  ApplicationDbContext context) =>
 {
-    var product = ProductRepository.GetById(id);
-
-    ProductRepository.RemoveProduct(product);
+    var product = context.Products.Where(p => p.Id == id).First();
+    context.Products.Remove(product);
+    context.SaveChanges();
     return Results.Ok("Deleted");
 });
 
