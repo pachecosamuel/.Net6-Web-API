@@ -1,4 +1,5 @@
-﻿using IWantApp.Domain.Products;
+﻿using Flunt.Notifications;
+using IWantApp.Domain.Products;
 using Microsoft.EntityFrameworkCore;
 
 namespace IWantApp.Infra.Data;
@@ -22,6 +23,10 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<Category>()
             .Property(c => c.Name).IsRequired();
 
+        modelBuilder.Ignore<Notification>();
+
+        //modelBuilder.Entity<Notification>()
+        //  .HasNoKey();
     }
 
     protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)

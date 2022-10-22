@@ -1,12 +1,10 @@
-﻿namespace IWantApp.Domain.Products;
+﻿using Flunt.Notifications;
+using System.ComponentModel.DataAnnotations;
 
-public class Entity
+namespace IWantApp.Domain.Products;
+
+public class Entity : Notifiable<Notification>
 {
-    public Entity()
-    {
-        Id = Guid.NewGuid();
-    }
-
     public Guid Id { get; set; }
     public string Name { get; set; }
     public string CreatedBy { get; set; }
@@ -14,4 +12,8 @@ public class Entity
     public string EditedBy { get; set; }
     public DateTime EditedOn { get; set; }
 
+    public Entity()
+    {
+        Id = Guid.NewGuid();
+    }
 }
