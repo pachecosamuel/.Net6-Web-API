@@ -1,7 +1,7 @@
 ﻿using Flunt.Notifications;
 using System.ComponentModel.DataAnnotations;
 
-namespace IWantApp.Domain.Products;
+namespace IWantApp.Domain;
 
 public class Entity : Notifiable<Notification>
 {
