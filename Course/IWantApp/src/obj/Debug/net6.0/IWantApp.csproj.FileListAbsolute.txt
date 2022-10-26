@@ -67,3 +67,4 @@ C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\IWantApp\src\bin\Debug\net6.0
 C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\IWantApp\src\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\IWantApp\src\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\IWantApp\src\bin\Debug\net6.0\Dapper.StrongName.dll
+C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\IWantApp\src\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
