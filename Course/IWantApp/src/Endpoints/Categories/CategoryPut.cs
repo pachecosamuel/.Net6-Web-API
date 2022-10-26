@@ -21,7 +21,7 @@ public class CategoryPut
 
         if (!category.IsValid)
             return Results.ValidationProblem(category.Notifications.ConvertToProblemDetails());
-
+        
         dbContext.SaveChanges();
 
         return Results.Ok();

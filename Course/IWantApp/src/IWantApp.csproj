@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper.StrongName" Version="2.0.123" />
     <PackageReference Include="Flunt" Version="2.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
@@ -28,10 +29,6 @@
 
   <ItemGroup>
     <None Include="C:\Users\pache\Desktop\JobT2M\.Net6-Web-API\Course\IWantApp\src\.editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Endpoints\Products\" />
   </ItemGroup>
 
 </Project>
