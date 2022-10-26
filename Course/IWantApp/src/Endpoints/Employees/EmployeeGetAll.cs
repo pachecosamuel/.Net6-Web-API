@@ -26,5 +26,17 @@ public class EmployeeGetAll
             employees.Add(new EmployeeResponse(u.Email, userName));
         }
         return Results.Ok(employees);
+
+        /*
+         * IConfiguration configuration
+         * var db = new SqlConnection(configuration["ConnectionString:IWantDb"]);
+        var employees = db.Query<EmployeeResponse>(
+            @"select Email, ClaimValue as Name
+                from AspNetUsers u inner JOIN AspNetUserClaims c
+                on u.Id = c.Id and claimtype = 'Name'"
+            );
+
+        return Results.Ok(employees);
+         * */
     }
 }
