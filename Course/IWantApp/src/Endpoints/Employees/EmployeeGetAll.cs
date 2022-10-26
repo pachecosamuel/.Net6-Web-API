@@ -14,10 +14,16 @@ public class EmployeeGetAll
     public static IResult Action(int? page, int? rows, IConfiguration configuration)
     {
         var db = new SqlConnection(configuration["ConnectionString:IWantDb"]);
-        var employees = db.Query<EmployeeResponse>(
-            @"select Email, ClaimValue as Name
+        var query = @"select Email, ClaimValue as Name
                 from AspNetUsers u inner JOIN AspNetUserClaims c
-                on u.Id = c.UserId and claimtype = 'Name'"
+                on u.Id = c.UserId and claimtype = 'Name'
+                order by name
+                OFFSET (@page -1) * @rows ROWS FETCH NEXT @rows ROWS ONLY
+                ";
+
+        var employees = db.Query<EmployeeResponse>(
+            query,
+            new {page, rows}
             );
 
         return Results.Ok(employees);
