@@ -43,7 +43,6 @@ public class TokenPost
             {
                 token = tokenHandler.WriteToken(token)
             });
-
     }
 
 }
