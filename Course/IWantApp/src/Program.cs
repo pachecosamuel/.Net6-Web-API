@@ -32,9 +32,13 @@ builder.Services.AddAuthorization(options =>
 
     options.AddPolicy("EmployeePolicy", p => 
     p.RequireAuthenticatedUser().RequireClaim("EmployeeCode"));
-
-
+    
+    /* Criando policies específicas para alguns endpoints,
+     * manager, security, adm, etc .. */
+    options.AddPolicy("Employee222Policy", p => 
+    p.RequireAuthenticatedUser().RequireClaim("EmployeeCode", "222"));
 });
+
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -48,6 +52,7 @@ builder.Services.AddAuthentication(x =>
         ValidateLifetime = true,
         ValidateIssuer = true,
         ValidateIssuerSigningKey = true,
+        ClockSkew = TimeSpan.Zero, 
         ValidIssuer = builder.Configuration["JwtBearerTokenSettings:Issuer"],
         ValidAudience = builder.Configuration["JwtBearerTokenSettings:Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtBearerTokenSettings:SecretKey"]))
