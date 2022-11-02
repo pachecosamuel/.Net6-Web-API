@@ -14,6 +14,8 @@ public class TokenPost
         ILogger<TokenPost> log)
     {
         log.LogInformation("Getting token");
+        log.LogWarning("Warning");
+        log.LogError("Error");
 
         var user = userManager.FindByEmailAsync(loginRequest.Email).Result;
 
