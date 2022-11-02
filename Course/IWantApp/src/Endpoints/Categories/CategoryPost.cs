@@ -12,14 +12,13 @@ public class CategoryPost
     public static Delegate Handle => Action;
 
     [Authorize(Policy = "EmployeePolicy")]
-    public static IResult Action(CategoryRequest categoryRequest,HttpContext http ,ApplicationDbContext dbContext)
+    public static IResult Action(CategoryRequest categoryRequest, HttpContext http ,ApplicationDbContext dbContext)
     {
         var userId = http.User.Claims.First(c => c.Type == ClaimTypes.NameIdentifier).Value;
         var category = new Category(categoryRequest.Name, userId, userId);
 
         if (!category.IsValid)
             return Results.ValidationProblem(category.Notifications.ConvertToProblemDetails());
-
 
         dbContext.Categories.Add(category);
         dbContext.SaveChanges();

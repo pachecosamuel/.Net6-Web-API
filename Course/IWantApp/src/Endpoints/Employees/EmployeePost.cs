@@ -9,25 +9,31 @@ public class EmployeePost
     public static string[] Methods => new string[] { HttpMethod.Post.ToString() };
     public static Delegate Handle => Action;
 
-    public static IResult Action(EmployeeRequest employeeRequest, UserManager<IdentityUser> userManager)
+    public static async Task<IResult> Action(EmployeeRequest employeeRequest, HttpContext http,UserManager<IdentityUser> userManager)
     {
         // User creation
+        var userId = http.User.Claims.First(c => c.Type == ClaimTypes.NameIdentifier).Value;
         var user = new IdentityUser { UserName = employeeRequest.Email, Email = employeeRequest.Email };
-        var result = userManager.CreateAsync(user, employeeRequest.Password).Result;
+        var result = await userManager.CreateAsync(user, employeeRequest.Password);
 
         if (!result.Succeeded)
             return Results.ValidationProblem(result.Errors.ConvertToProblemDetails());
 
-
         // User Claims
         var claimResult =
-            userManager.AddClaimAsync(user, new Claim("Name", employeeRequest.Name)).Result;
+            await userManager.AddClaimAsync(user, new Claim("Name", employeeRequest.Name));
         
         if (!claimResult.Succeeded)
             return Results.BadRequest(result.Errors.First());
         
-        claimResult = 
-            userManager.AddClaimAsync(user, new Claim("EmployeeCode", employeeRequest.EmployeeCode)).Result;
+        claimResult =
+            await userManager.AddClaimAsync(user, new Claim("EmployeeCode", employeeRequest.EmployeeCode));
+
+        if (!claimResult.Succeeded)
+            return Results.BadRequest(result.Errors.First());
+
+        claimResult =
+            await userManager.AddClaimAsync(user, new Claim("CreatedBy", userId));
 
         if (!claimResult.Succeeded)
             return Results.BadRequest(result.Errors.First());
