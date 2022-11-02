@@ -1,14 +1,7 @@
-using IWantApp.Endpoints.Categories;
-using IWantApp.Endpoints.Employees;
-using IWantApp.Endpoints.Security;
-using IWantApp.Infra.Data;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
-
 var builder = WebApplication.CreateBuilder(args);
+
+
+
 builder.Services.AddSqlServer<ApplicationDbContext>(builder.Configuration["ConnectionString:IWantDb"]);
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 {
@@ -33,8 +26,6 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("EmployeePolicy", p => 
     p.RequireAuthenticatedUser().RequireClaim("EmployeeCode"));
     
-    /* Criando policies específicas para alguns endpoints,
-     * manager, security, adm, etc .. */
     options.AddPolicy("Employee222Policy", p => 
     p.RequireAuthenticatedUser().RequireClaim("EmployeeCode", "222"));
 });
@@ -76,7 +67,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// app.MapGet("/product", () => $"Hello world!");
+app.UseExceptionHandler("/error");
+app.Map("/error", (HttpContext http) =>
+{
+    return Results.Problem(title: "An error ocurred", statusCode: 500);
+});
+
 
 app.MapMethods(CategoryPost.Template, CategoryPost.Methods, CategoryPost.Handle);
 
