@@ -1,4 +1,4 @@
-﻿/*namespace IWantApp.Endpoints.Products;
+﻿namespace IWantApp.Endpoints.Products;
 
 public class ProductPost
 {
@@ -11,7 +11,7 @@ public class ProductPost
     {
         var userId = http.User.Claims.First(c => c.Type == ClaimTypes.NameIdentifier).Value;
         var category = await dbContext.Categories.FirstOrDefaultAsync(c => c.Id == productRequest.CategoryId);
-        var product = new Product(productRequest.Name, category, productRequest.productDescription, productRequest.HasStock, userId);
+        var product = new Product(productRequest.Name, category, productRequest.Description, productRequest.HasStock, userId);
 
         if (!product.IsValid)
             return Results.ValidationProblem(product.Notifications.ConvertToProblemDetails());
@@ -22,4 +22,4 @@ public class ProductPost
         return Results.Created($"/products/{product.Id}", product);
     }
 
-}*/
+}
