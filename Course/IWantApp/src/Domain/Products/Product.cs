@@ -6,17 +6,17 @@ public class Product : Entity
     public string Name { get; private set; }
     public Guid CategoryId { get; private set; }
     public Category Category { get; private set; }
-    public string Description { get; private set; }
+    public string ProductDescription { get; private set; }
     public bool HasStock { get; private set; }
     public bool Active { get; private set; } = true;
 
     private Product() { }
 
-    public Product(string name, Category category, string description, bool hasStock, string createdBy)
+    public Product(string name, Category category, string productDescription, bool hasStock, string createdBy)
     {
         Name = name;
         Category = category;
-        Description = description;
+        ProductDescription = productDescription;
         HasStock = hasStock;
 
         CreatedBy = createdBy;
@@ -32,8 +32,8 @@ public class Product : Entity
             .IsNotNullOrEmpty(Name, "Name")
             .IsGreaterOrEqualsThan(Name, 3, "Name")
             .IsNotNull(Category, "Category", "Category not found")
-            .IsNotNullOrEmpty(Description, "Description")
-            .IsGreaterOrEqualsThan(Description, 3, "Description")
+            .IsNotNullOrEmpty(ProductDescription, "ProductDescription")
+            .IsGreaterOrEqualsThan(ProductDescription, 3, "ProductDescription")
             //.IsGreaterOrEqualsThan(Price, 1, "Price")
             .IsNotNullOrEmpty(CreatedBy, "CreatedBy")
             .IsNotNullOrEmpty(EditedBy, "EditedBy");

@@ -1,4 +1,4 @@
-﻿/*namespace IWantApp.Endpoints.Products;
+﻿namespace IWantApp.Endpoints.Products;
 
 public class ProductGetAll
 {
@@ -13,4 +13,4 @@ public class ProductGetAll
         var results = products.Select(p => new ProductResponse(p.Name, p.Category.Name, p.ProductDescription, p.HasStock, p.Active));
         return Results.Ok(results);
     }
-}*/
+}
