@@ -17,6 +17,8 @@
 		<Using Include="System.Security.Claims" />
 		<Using Include="System.Text" />
 		<Using Include="Flunt.Notifications" />
+		<Using Include="Serilog" />
+		<Using Include="Serilog.Sinks.MSSqlServer" />
 		
 		
 		<Using Include="IWantApp.Domain.Products" />

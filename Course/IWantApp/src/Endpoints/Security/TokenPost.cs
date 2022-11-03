@@ -56,4 +56,17 @@ public class TokenPost
             });
     }
 
+    /*builder.WebHost.UseSerilog((context, configuration) =>
+{
+    configuration
+        .WriteTo.Console()
+        .WriteTo.MSSqlServer(
+            context.Configuration["ConnectionString:IWantDb"],
+            sinkOptions: new MSSqlServerSinkOptions()
+            {
+                AutoCreateSqlTable = true,
+                TableName = "LogApi"
+            });
+});*/
+
 }

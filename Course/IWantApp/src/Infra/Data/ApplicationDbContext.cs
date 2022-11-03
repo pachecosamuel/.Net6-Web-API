@@ -13,7 +13,7 @@ public class ApplicationDbContext : IdentityDbContext<IdentityUser>
         base.OnModelCreating(modelBuilder);
 
         modelBuilder.Entity<Product>()
-            .Property(p => p.ProductDescription).HasMaxLength(300).IsRequired(false);
+            .Property(p => p.Description).HasMaxLength(300).IsRequired(false);
 
         modelBuilder.Entity<Product>()
             .Property(p => p.Name).IsRequired();

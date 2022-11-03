@@ -1,20 +1,4 @@
-using Serilog;
-using Serilog.Sinks.MSSqlServer;
-
 var builder = WebApplication.CreateBuilder(args);
-
-builder.WebHost.UseSerilog((context, configuration) =>
-{
-    configuration
-        .WriteTo.Console()
-        .WriteTo.MSSqlServer(
-            context.Configuration["ConnectionString:IWantDb"],
-            sinkOptions: new MSSqlServerSinkOptions()
-            {
-                AutoCreateSqlTable = true,
-                TableName = "LogApi"
-            });
-});
 
 builder.Services.AddSqlServer<ApplicationDbContext>(builder.Configuration["ConnectionString:IWantDb"]);
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
@@ -37,10 +21,10 @@ builder.Services.AddAuthorization(options =>
         .RequireAuthenticatedUser()
         .Build();
 
-    options.AddPolicy("EmployeePolicy", p => 
+    options.AddPolicy("EmployeePolicy", p =>
     p.RequireAuthenticatedUser().RequireClaim("EmployeeCode"));
-    
-    options.AddPolicy("Employee222Policy", p => 
+
+    options.AddPolicy("Employee222Policy", p =>
     p.RequireAuthenticatedUser().RequireClaim("EmployeeCode", "222"));
 });
 
@@ -57,7 +41,7 @@ builder.Services.AddAuthentication(x =>
         ValidateLifetime = true,
         ValidateIssuer = true,
         ValidateIssuerSigningKey = true,
-        ClockSkew = TimeSpan.Zero, 
+        ClockSkew = TimeSpan.Zero,
         ValidIssuer = builder.Configuration["JwtBearerTokenSettings:Issuer"],
         ValidAudience = builder.Configuration["JwtBearerTokenSettings:Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtBearerTokenSettings:SecretKey"]))
@@ -72,7 +56,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 app.UseAuthentication();
 app.UseAuthorization();
- 
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

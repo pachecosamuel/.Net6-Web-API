@@ -1,11 +1,4 @@
-﻿using Dapper;
-using IWantApp.Infra.Data;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Data.SqlClient;
-using System.Security.Claims;
-
-namespace IWantApp.Endpoints.Employees;
+﻿namespace IWantApp.Endpoints.Employees;
 
 public class EmployeeGetAll
 {
