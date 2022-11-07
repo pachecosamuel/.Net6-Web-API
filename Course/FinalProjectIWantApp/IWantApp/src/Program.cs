@@ -97,5 +97,7 @@ app.MapMethods(ProductGetById.Template, ProductGetById.Methods, ProductGetById.H
 
 app.MapMethods(CustomerPost.Template, CustomerPost.Methods, CustomerPost.Handle);
 
+app.MapMethods(CustomerGet.Template, CustomerGet.Methods, CustomerGet.Handle);
+
 app.Run();
 

@@ -3,6 +3,7 @@
 public class CustomerPost
 {
     public static string Template => "/customer";
+    public static string[] Methods => new string[] { HttpMethod.Post.ToString() };
     public static Delegate Handle => Action;
 
     [AllowAnonymous]
