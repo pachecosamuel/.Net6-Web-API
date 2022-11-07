@@ -11,7 +11,7 @@ public class ProductPost
     {
         var userId = http.User.Claims.First(c => c.Type == ClaimTypes.NameIdentifier).Value;
         var category = await dbContext.Categories.FirstOrDefaultAsync(c => c.Id == productRequest.CategoryId);
-        var product = new Product(productRequest.Name, category, productRequest.ProductDescription, productRequest.HasStock, productRequest.Price,userId);
+        var product = new Product(productRequest.Name, category, productRequest.ProductDescription, productRequest.HasStock, productRequest.Price, userId);
 
         if (!product.IsValid)
             return Results.ValidationProblem(product.Notifications.ConvertToProblemDetails());
@@ -21,5 +21,4 @@ public class ProductPost
 
         return Results.Created($"/products/{product.Id}", product.Id);
     }
-
 }
