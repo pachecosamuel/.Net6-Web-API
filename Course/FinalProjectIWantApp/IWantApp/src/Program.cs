@@ -1,3 +1,4 @@
+using IWantApp.Endpoints.Customer;
 using IWantApp.Endpoints.Products;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -93,6 +94,8 @@ app.MapMethods(ProductGetAll.Template, ProductGetAll.Methods, ProductGetAll.Hand
 app.MapMethods(ProductGetShowCase.Template, ProductGetShowCase.Methods, ProductGetShowCase.Handle);
 
 app.MapMethods(ProductGetById.Template, ProductGetById.Methods, ProductGetById.Handle);
+
+app.MapMethods(CustomerPost.Template, CustomerPost.Methods, CustomerPost.Handle);
 
 app.Run();
 
