@@ -10,18 +10,19 @@ public class Order : Entity
     public decimal Total { get; private set; }
     public string DeliveryAdress { get; private set; }
 
+
     public Order()
     {
     }
 
-    public Order(string customerId, string clientName, List<Product> products, string deliveryAdress)
+    public Order(string customerId, string customerName, List<Product> products, string deliveryAdress)
     {
         CustomerId=customerId;
         Products=products;
         DeliveryAdress=deliveryAdress;
 
-        CreatedBy = clientName;
-        EditedBy = clientName;
+        CreatedBy = customerName;
+        EditedBy = customerName;
         CreatedOn = DateTime.Now;
         EditedOn = DateTime.Now;
 
@@ -38,7 +39,8 @@ public class Order : Entity
     {
         var contract = new Contract<Order>()
             .IsNotNull(CustomerId, "Customer")
-            .IsNotNull(Products, "Products");
+            .IsTrue(Products != null && Products.Any(), "Products")
+            .IsNotNull(DeliveryAdress, "DeliveryAdress");
         AddNotifications(contract);
     }
 }

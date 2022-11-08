@@ -1,4 +1,5 @@
 using IWantApp.Endpoints.Customer;
+using IWantApp.Endpoints.Order;
 using IWantApp.Endpoints.Products;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +30,9 @@ builder.Services.AddAuthorization(options =>
 
     options.AddPolicy("Employee222Policy", p =>
     p.RequireAuthenticatedUser().RequireClaim("EmployeeCode", "222"));
+    
+    options.AddPolicy("CpfPolicy", p =>
+    p.RequireAuthenticatedUser().RequireClaim("Cpf"));
 });
 
 builder.Services.AddAuthentication(x =>
@@ -98,6 +102,8 @@ app.MapMethods(ProductGetById.Template, ProductGetById.Methods, ProductGetById.H
 app.MapMethods(CustomerPost.Template, CustomerPost.Methods, CustomerPost.Handle);
 
 app.MapMethods(CustomerGet.Template, CustomerGet.Methods, CustomerGet.Handle);
+
+app.MapMethods(OrderPost.Template, OrderPost.Methods, OrderPost.Handle);
 
 app.Run();
 
