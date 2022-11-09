@@ -16,13 +16,6 @@ public class OrderPost
         var customerName = http.User.Claims
             .First(c => c.Type == "Name").Value;
 
-        /*
-        if (orderRequest.ProductIds == null || !orderRequest.ProductIds.Any())
-            return Results.BadRequest("Product is mandatory to order");
-        else if(string.IsNullOrEmpty(orderRequest.DeliveryAdress))
-            return Results.BadRequest("Delivery adress is mandatory to order");
-        */
-
         List<Product> productsFound = null;
 
         if(orderRequest.ProductIds != null && orderRequest.ProductIds.Any())
